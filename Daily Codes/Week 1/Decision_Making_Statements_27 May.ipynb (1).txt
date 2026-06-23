@@ -1,0 +1,378 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "04db7a18-b084-4220-9f9f-1b969505db40",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any no 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter any no\"))\n",
+    "if num>5:\n",
+    "    print('Yes')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "f496752b-a047-409b-9b04-ef7e050d0dfe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any no 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "No\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter any no\"))\n",
+    "if num>5:\n",
+    "    print('Yes')\n",
+    "else:\n",
+    "    print('No')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "16c97d2a-1d9f-40e3-9c98-07aba06ac14a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any no 0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0 is negative\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter any no\"))\n",
+    "if num>0:\n",
+    "    print(num,'is positive')\n",
+    "else:\n",
+    "    print(num,'is negative')\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "4c63eaf8-fd7b-49df-8bce-71a72eafdd50",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any no 0\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0 is even\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter any no\"))\n",
+    "if num%2==0:\n",
+    "    print(num,'is even')\n",
+    "else:\n",
+    "     print(num,'is odd')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "d80a4402-0e58-4d8a-bf99-5df2287ef69f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "True+True+False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "d8e25daa-1f96-4c34-bf93-eb4c26349f38",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "4068c8f0-9fac-4b9a-87c8-4951c4be9256",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "7155f58c-b801-4565-8d8a-203bd9622495",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any no 50\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "50 is less than 50.\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter any no\"))\n",
+    "if num > 50:\n",
+    "    if num <100:\n",
+    "        print(num,\"is between 50 and 100.\")\n",
+    "    else:\n",
+    "        print(num,\"is greater than 100.\")\n",
+    "else:\n",
+    "    print(num,\"is less than 50.\")\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "e7408eb2-546f-4c17-8f4f-094a27a04ddb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter any no 45\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not Satisfied\n"
+     ]
+    }
+   ],
+   "source": [
+    "num=int(input(\"enter any no\"))\n",
+    "if num==50 and num==100:\n",
+    "    print(\"Satisfied\")\n",
+    "else:\n",
+    "    print(\"Not Satisfied\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "ae8d9cfc-a964-452b-af08-29b163d9bd6a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter purchase cost: 89\n",
+      "Enter selling cost: 76\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Loss: 13\n"
+     ]
+    }
+   ],
+   "source": [
+    "purchase_cost=int(input(\"Enter purchase cost:\"))\n",
+    "selling_cost=int(input(\"Enter selling cost:\"))\n",
+    "if selling_cost>purchase_cost:\n",
+    "    print(\"Profit\",selling_cost-purchase_cost)\n",
+    "elif purchase_cost>selling_cost:\n",
+    "    print(\"Loss:\",purchase_cost-selling_cost)\n",
+    "else:\n",
+    "    print(\"No profit and no loss\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "d8fc35e1-16ee-47d9-9007-a55fec321d30",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter any year: 1800\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1800 is not leap year\n"
+     ]
+    }
+   ],
+   "source": [
+    "year=int(input(\"Enter any year:\"))\n",
+    "if year%4==0:\n",
+    "    if year%100==0:\n",
+    "        if year%400==0:\n",
+    "            print(year,\"is leap year\")\n",
+    "        else:\n",
+    "            print(year,\"is not leap year\")\n",
+    "    else:\n",
+    "        print(year,\"is not leap year\")\n",
+    "\n",
+    "else:\n",
+    "    print(year,\"is not leap year\")\n",
+    "        \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "35b4d3a7-9b40-4dd4-84b4-a14d17d56812",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter first number: 87\n",
+      "Enter second number: 90\n",
+      "Enter third number: 100\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "100 is greater\n"
+     ]
+    }
+   ],
+   "source": [
+    "no1=int(input(\"Enter first number:\"))\n",
+    "no2=int(input(\"Enter second number:\"))\n",
+    "no3=int(input(\"Enter third number:\"))\n",
+    "if no1>no2:\n",
+    "    if no1>no3:\n",
+    "        print(no1,'is greater')\n",
+    "    else:\n",
+    "        print(no3,'is greater')\n",
+    "else:\n",
+    "    if no2>no3:\n",
+    "        print(no2,\"is greater\")\n",
+    "    else:\n",
+    "        print(no3,\"is greater\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5865473d-bd57-4eb1-9ea7-8432323b0435",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
