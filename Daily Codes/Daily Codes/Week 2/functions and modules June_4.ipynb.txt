@@ -1,0 +1,1523 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "9285a343-42fa-4bef-bcf9-cb898035f7f2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "##Functions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8cda85f2-494f-41eb-93b8-b34ad2ab3ea5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def show(): #function definition\n",
+    "    print(\"hello\")\n",
+    "    print(\"ok\")\n",
+    "    print(\"goodbye\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "da52433b-f4aa-4fb9-8f1b-7dca2b80d897",
+   "metadata": {
+    "collapsed": true,
+    "jupyter": {
+     "outputs_hidden": true
+    }
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n",
+      "ok\n",
+      "goodbye\n"
+     ]
+    }
+   ],
+   "source": [
+    "show() #function call"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "68777902-c883-4aba-96e3-c564e30ec958",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n",
+      "ok\n",
+      "goodbye\n",
+      "hello\n",
+      "ok\n",
+      "goodbye\n",
+      "hello\n",
+      "ok\n",
+      "goodbye\n"
+     ]
+    }
+   ],
+   "source": [
+    "show()\n",
+    "show()\n",
+    "show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "c9d6558a-36e1-4ab1-b881-54e532fee5b4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# parameterized function"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "9a3564cc-399d-4082-802c-4e2f08b256d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def sq(x):\n",
+    "    res=x*x\n",
+    "    print(res)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "edcd5c50-8b9f-413d-89a4-09047c8c5392",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25\n"
+     ]
+    }
+   ],
+   "source": [
+    "sq(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "def4ee47-4bd3-4770-991c-053ce1c2a064",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# function to check which number is larger among two numbers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "2c29b748-cf35-4154-adb7-6c3a7ecf5dd2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def large(x,y):\n",
+    "    if x>y:\n",
+    "        print(\"Large number is:\",x)\n",
+    "    elif y>x:\n",
+    "        print(\"Large number is:\",y)\n",
+    "    else:\n",
+    "        print(\"Both numbers are equal\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "087ccc26-312d-414f-9b45-e9d3621b2da9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Large number is: 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "large(4,1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "b72e1a02-948d-45fc-b9c0-95e8106c96a1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# function to display a name n number of times"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "7dfdf94a-0598-4712-83d0-52ca3bce7f4a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def display(name,no):\n",
+    "    for i in range(no):\n",
+    "        print(name)\n",
+    "    \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "6298b98b-9975-4ae6-a38a-1ce45b72ba50",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Pune\n",
+      "Pune\n",
+      "Pune\n",
+      "Pune\n",
+      "Pune\n"
+     ]
+    }
+   ],
+   "source": [
+    "display(\"Pune\",5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "d80a1b24-24f1-4040-a695-a846d5dd8c26",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#create a function to find factorial of number"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "92b5bd7f-f1c6-4345-850d-03d7bfb46db2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def fact(no):\n",
+    "    f=1\n",
+    "    for i in range(1,no+1):\n",
+    "        f=f*i\n",
+    "    print(\"Factorial of\",no,\"is\",f)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "dd4fce21-7953-402f-afc6-dd2b40fe38c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Factorial of 5 is 120\n"
+     ]
+    }
+   ],
+   "source": [
+    "fact(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "2da3e6fb-de35-4c2d-8d82-efe99da87e83",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#return"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "fc9463f0-97c3-49ae-b6ec-413a2993180a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def sq(x):\n",
+    "    res=x*x\n",
+    "    print(res)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "8be3d758-7b4d-4a5d-bb19-eda4e8c8a4a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=sq(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "95d88f68-798f-41fc-92d8-48e3a0ddf12f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "6a61f39d-e4f6-4ee6-9525-fa22f7398b41",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def sq(x):\n",
+    "    res=x*x\n",
+    "    return res"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "0057f74f-7474-400b-a3c2-54e78a4d892d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=sq(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "ac925356-f65b-41f4-b3cc-3ea4be45e46c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "25"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "f0b150ce-fc46-4123-865f-40140448b796",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#function returning square and cube of number"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "0961fda0-c018-4ec6-88b6-9690d97bfdf8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def cal(no):\n",
+    "    sq=no**2\n",
+    "    cu=no**3\n",
+    "    return cu,sq\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "7ba40f77-2896-4539-b573-3d76c7fc3d4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(125, 25)"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "cal(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "f4a8926a-9054-4bfb-84e1-c6a78ee4cb64",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(cal(5))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "c0a76850-80de-4520-a1f7-efc4ce1c6375",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#function for addition of 3 numbers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "15c44187-8f0b-4957-90fc-8f8d268fad21",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add(no1,no2,no3):\n",
+    "    sum=no1+no2+no3\n",
+    "    return sum"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "50a518ba-58ea-491d-a77c-b178d5f8f473",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "15"
+      ]
+     },
+     "execution_count": 76,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "add(5,4,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "21b85839-a3fc-4a97-846c-1b344ea100c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "add() missing 1 required positional argument: 'no3'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mTypeError\u001b[39m                                 Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[77]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[43madd\u001b[49m\u001b[43m(\u001b[49m\u001b[32;43m10\u001b[39;49m\u001b[43m,\u001b[49m\u001b[32;43m20\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[31mTypeError\u001b[39m: add() missing 1 required positional argument: 'no3'"
+     ]
+    }
+   ],
+   "source": [
+    "add(10,20)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "7f58ab6c-8875-4703-bff3-cd86fff0e492",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "add() missing 2 required positional arguments: 'no2' and 'no3'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m---------------------------------------------------------------------------\u001b[39m",
+      "\u001b[31mTypeError\u001b[39m                                 Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[78]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[43madd\u001b[49m\u001b[43m(\u001b[49m\u001b[32;43m40\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[31mTypeError\u001b[39m: add() missing 2 required positional arguments: 'no2' and 'no3'"
+     ]
+    }
+   ],
+   "source": [
+    "add(40)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "1d8df210-7e57-474e-8f07-093d6ea7a573",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add(a=10,b=5,c=1):\n",
+    "    sum=a+b+c\n",
+    "    return sum"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "id": "845f6abb-5cea-427b-997f-52ef7d252f18",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "125"
+      ]
+     },
+     "execution_count": 80,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "add(a=50,c=70)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "ef1d9e26-383d-49a7-9912-b8f2bbb0c2b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "60"
+      ]
+     },
+     "execution_count": 81,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "add(10,20,30)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "id": "f53950e6-2d04-4770-9c70-b2f3c8595d73",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "13"
+      ]
+     },
+     "execution_count": 82,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "add(5,7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "id": "224aee43-f15f-4d8c-84a8-d8b36c35a243",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# variable length arguments"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "6b899cdb-58c0-40e8-ad4e-d32f2220c2f5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def ini(*args):\n",
+    "    return args"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "38ff9111-d4cb-489f-af24-ae49897893d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(10, 20, 30, 40, 50, 8, 9)"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "ini(10,20,30,40,50,8,9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "c90394d7-d06f-410b-a145-8c3cefa07d98",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# pass any number of integers and find thier sum"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "id": "c1703758-c0c3-45c4-9de9-b58d6ff086b2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def sum(*args):\n",
+    "    sum=0\n",
+    "    for i in args:\n",
+    "        sum=sum+i\n",
+    "    return sum"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "id": "9c584a6c-5425-4888-98f7-7b45766ab610",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "100"
+      ]
+     },
+     "execution_count": 106,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sum(10,20,30,40)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "id": "ff44d9d2-1d94-4b8f-8745-3902238cde35",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#lambda function"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bd47a0a8-ab3d-46b9-b4d1-eff671b1c7dc",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "id": "853d73d1-4905-4da0-bd40-8d688f0be6b3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sq=lambda x:x*x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "id": "3e97f973-e7e5-49e2-9ac3-48d296c911dc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "25"
+      ]
+     },
+     "execution_count": 110,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sq(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "id": "9f1263c7-1cfe-400f-a142-e6ee14f6ff78",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#create a lambda function to find the sum of 2 numbers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "id": "611a7719-73f2-45d8-a1bb-ef7af7fdb583",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "add=lambda a,b:a+b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "id": "ce72774f-238c-42db-8c85-2d232fb0a44a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "11"
+      ]
+     },
+     "execution_count": 113,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "add(5,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 114,
+   "id": "cd768a26-e46d-42fc-9f90-25b2ee6be553",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#filter and map"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 115,
+   "id": "305c3c75-59b2-4589-995a-e4e288c9bd2c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l=[1,2,3,4,5,6,7,8,9,10]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "id": "270d1bc6-cbac-418f-8566-7552766a0447",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n1=filter(lambda x:x%2==0,l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "id": "7f32bc8d-9bcc-4231-96ca-35fd1eacfa6d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 4, 6, 8, 10]"
+      ]
+     },
+     "execution_count": 118,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(n1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "id": "80d1bd77-8475-4d80-a5f5-71b823db188f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n2=map(lambda x:x*x,l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "id": "d18369cb-7a42-4e09-852f-90f2ca8805e6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]"
+      ]
+     },
+     "execution_count": 120,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(n2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "e3600d9c-f245-4af9-8f04-b7f41a566cf8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "n1=map(lambda x:x%2==0,l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "id": "5c0a74d3-d645-4756-8eda-cebedfff5fa1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[False, True, False, True, False, True, False, True, False, True]"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(n1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 123,
+   "id": "4c2cdb42-0fcb-4e9e-8f84-e764b7f5d86c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Modules"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "id": "815f670e-5b6e-497c-8b2d-bb34dc4bf843",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math as m"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "id": "692a764e-15a7-4234-92f5-3281f353534a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5.0"
+      ]
+     },
+     "execution_count": 130,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "m.sqrt(25)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "id": "bba8f98d-fda2-4381-a801-d36d4d00236a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Help on built-in module math:\n",
+      "\n",
+      "NAME\n",
+      "    math\n",
+      "\n",
+      "DESCRIPTION\n",
+      "    This module provides access to the mathematical functions\n",
+      "    defined by the C standard.\n",
+      "\n",
+      "FUNCTIONS\n",
+      "    acos(x, /)\n",
+      "        Return the arc cosine (measured in radians) of x.\n",
+      "\n",
+      "        The result is between 0 and pi.\n",
+      "\n",
+      "    acosh(x, /)\n",
+      "        Return the inverse hyperbolic cosine of x.\n",
+      "\n",
+      "    asin(x, /)\n",
+      "        Return the arc sine (measured in radians) of x.\n",
+      "\n",
+      "        The result is between -pi/2 and pi/2.\n",
+      "\n",
+      "    asinh(x, /)\n",
+      "        Return the inverse hyperbolic sine of x.\n",
+      "\n",
+      "    atan(x, /)\n",
+      "        Return the arc tangent (measured in radians) of x.\n",
+      "\n",
+      "        The result is between -pi/2 and pi/2.\n",
+      "\n",
+      "    atan2(y, x, /)\n",
+      "        Return the arc tangent (measured in radians) of y/x.\n",
+      "\n",
+      "        Unlike atan(y/x), the signs of both x and y are considered.\n",
+      "\n",
+      "    atanh(x, /)\n",
+      "        Return the inverse hyperbolic tangent of x.\n",
+      "\n",
+      "    cbrt(x, /)\n",
+      "        Return the cube root of x.\n",
+      "\n",
+      "    ceil(x, /)\n",
+      "        Return the ceiling of x as an Integral.\n",
+      "\n",
+      "        This is the smallest integer >= x.\n",
+      "\n",
+      "    comb(n, k, /)\n",
+      "        Number of ways to choose k items from n items without repetition and without order.\n",
+      "\n",
+      "        Evaluates to n! / (k! * (n - k)!) when k <= n and evaluates\n",
+      "        to zero when k > n.\n",
+      "\n",
+      "        Also called the binomial coefficient because it is equivalent\n",
+      "        to the coefficient of k-th term in polynomial expansion of the\n",
+      "        expression (1 + x)**n.\n",
+      "\n",
+      "        Raises TypeError if either of the arguments are not integers.\n",
+      "        Raises ValueError if either of the arguments are negative.\n",
+      "\n",
+      "    copysign(x, y, /)\n",
+      "        Return a float with the magnitude (absolute value) of x but the sign of y.\n",
+      "\n",
+      "        On platforms that support signed zeros, copysign(1.0, -0.0)\n",
+      "        returns -1.0.\n",
+      "\n",
+      "    cos(x, /)\n",
+      "        Return the cosine of x (measured in radians).\n",
+      "\n",
+      "    cosh(x, /)\n",
+      "        Return the hyperbolic cosine of x.\n",
+      "\n",
+      "    degrees(x, /)\n",
+      "        Convert angle x from radians to degrees.\n",
+      "\n",
+      "    dist(p, q, /)\n",
+      "        Return the Euclidean distance between two points p and q.\n",
+      "\n",
+      "        The points should be specified as sequences (or iterables) of\n",
+      "        coordinates.  Both inputs must have the same dimension.\n",
+      "\n",
+      "        Roughly equivalent to:\n",
+      "            sqrt(sum((px - qx) ** 2.0 for px, qx in zip(p, q)))\n",
+      "\n",
+      "    erf(x, /)\n",
+      "        Error function at x.\n",
+      "\n",
+      "    erfc(x, /)\n",
+      "        Complementary error function at x.\n",
+      "\n",
+      "    exp(x, /)\n",
+      "        Return e raised to the power of x.\n",
+      "\n",
+      "    exp2(x, /)\n",
+      "        Return 2 raised to the power of x.\n",
+      "\n",
+      "    expm1(x, /)\n",
+      "        Return exp(x)-1.\n",
+      "\n",
+      "        This function avoids the loss of precision involved in the direct evaluation of exp(x)-1 for small x.\n",
+      "\n",
+      "    fabs(x, /)\n",
+      "        Return the absolute value of the float x.\n",
+      "\n",
+      "    factorial(n, /)\n",
+      "        Find n!.\n",
+      "\n",
+      "    floor(x, /)\n",
+      "        Return the floor of x as an Integral.\n",
+      "\n",
+      "        This is the largest integer <= x.\n",
+      "\n",
+      "    fma(x, y, z, /)\n",
+      "        Fused multiply-add operation.\n",
+      "\n",
+      "        Compute (x * y) + z with a single round.\n",
+      "\n",
+      "    fmod(x, y, /)\n",
+      "        Return fmod(x, y), according to platform C.\n",
+      "\n",
+      "        x % y may differ.\n",
+      "\n",
+      "    frexp(x, /)\n",
+      "        Return the mantissa and exponent of x, as pair (m, e).\n",
+      "\n",
+      "        m is a float and e is an int, such that x = m * 2.**e.\n",
+      "        If x is 0, m and e are both 0.  Else 0.5 <= abs(m) < 1.0.\n",
+      "\n",
+      "    fsum(seq, /)\n",
+      "        Return an accurate floating-point sum of values in the iterable seq.\n",
+      "\n",
+      "        Assumes IEEE-754 floating-point arithmetic.\n",
+      "\n",
+      "    gamma(x, /)\n",
+      "        Gamma function at x.\n",
+      "\n",
+      "    gcd(*integers)\n",
+      "        Greatest Common Divisor.\n",
+      "\n",
+      "    hypot(...)\n",
+      "        hypot(*coordinates) -> value\n",
+      "\n",
+      "        Multidimensional Euclidean distance from the origin to a point.\n",
+      "\n",
+      "        Roughly equivalent to:\n",
+      "            sqrt(sum(x**2 for x in coordinates))\n",
+      "\n",
+      "        For a two dimensional point (x, y), gives the hypotenuse\n",
+      "        using the Pythagorean theorem:  sqrt(x*x + y*y).\n",
+      "\n",
+      "        For example, the hypotenuse of a 3/4/5 right triangle is:\n",
+      "\n",
+      "            >>> hypot(3.0, 4.0)\n",
+      "            5.0\n",
+      "\n",
+      "    isclose(a, b, *, rel_tol=1e-09, abs_tol=0.0)\n",
+      "        Determine whether two floating-point numbers are close in value.\n",
+      "\n",
+      "          rel_tol\n",
+      "            maximum difference for being considered \"close\", relative to the\n",
+      "            magnitude of the input values\n",
+      "          abs_tol\n",
+      "            maximum difference for being considered \"close\", regardless of the\n",
+      "            magnitude of the input values\n",
+      "\n",
+      "        Return True if a is close in value to b, and False otherwise.\n",
+      "\n",
+      "        For the values to be considered close, the difference between them\n",
+      "        must be smaller than at least one of the tolerances.\n",
+      "\n",
+      "        -inf, inf and NaN behave similarly to the IEEE 754 Standard.  That\n",
+      "        is, NaN is not close to anything, even itself.  inf and -inf are\n",
+      "        only close to themselves.\n",
+      "\n",
+      "    isfinite(x, /)\n",
+      "        Return True if x is neither an infinity nor a NaN, and False otherwise.\n",
+      "\n",
+      "    isinf(x, /)\n",
+      "        Return True if x is a positive or negative infinity, and False otherwise.\n",
+      "\n",
+      "    isnan(x, /)\n",
+      "        Return True if x is a NaN (not a number), and False otherwise.\n",
+      "\n",
+      "    isqrt(n, /)\n",
+      "        Return the integer part of the square root of the input.\n",
+      "\n",
+      "    lcm(*integers)\n",
+      "        Least Common Multiple.\n",
+      "\n",
+      "    ldexp(x, i, /)\n",
+      "        Return x * (2**i).\n",
+      "\n",
+      "        This is essentially the inverse of frexp().\n",
+      "\n",
+      "    lgamma(x, /)\n",
+      "        Natural logarithm of absolute value of Gamma function at x.\n",
+      "\n",
+      "    log(...)\n",
+      "        log(x, [base=math.e])\n",
+      "        Return the logarithm of x to the given base.\n",
+      "\n",
+      "        If the base is not specified, returns the natural logarithm (base e) of x.\n",
+      "\n",
+      "    log10(x, /)\n",
+      "        Return the base 10 logarithm of x.\n",
+      "\n",
+      "    log1p(x, /)\n",
+      "        Return the natural logarithm of 1+x (base e).\n",
+      "\n",
+      "        The result is computed in a way which is accurate for x near zero.\n",
+      "\n",
+      "    log2(x, /)\n",
+      "        Return the base 2 logarithm of x.\n",
+      "\n",
+      "    modf(x, /)\n",
+      "        Return the fractional and integer parts of x.\n",
+      "\n",
+      "        Both results carry the sign of x and are floats.\n",
+      "\n",
+      "    nextafter(x, y, /, *, steps=None)\n",
+      "        Return the floating-point value the given number of steps after x towards y.\n",
+      "\n",
+      "        If steps is not specified or is None, it defaults to 1.\n",
+      "\n",
+      "        Raises a TypeError, if x or y is not a double, or if steps is not an integer.\n",
+      "        Raises ValueError if steps is negative.\n",
+      "\n",
+      "    perm(n, k=None, /)\n",
+      "        Number of ways to choose k items from n items without repetition and with order.\n",
+      "\n",
+      "        Evaluates to n! / (n - k)! when k <= n and evaluates\n",
+      "        to zero when k > n.\n",
+      "\n",
+      "        If k is not specified or is None, then k defaults to n\n",
+      "        and the function returns n!.\n",
+      "\n",
+      "        Raises TypeError if either of the arguments are not integers.\n",
+      "        Raises ValueError if either of the arguments are negative.\n",
+      "\n",
+      "    pow(x, y, /)\n",
+      "        Return x**y (x to the power of y).\n",
+      "\n",
+      "    prod(iterable, /, *, start=1)\n",
+      "        Calculate the product of all the elements in the input iterable.\n",
+      "\n",
+      "        The default start value for the product is 1.\n",
+      "\n",
+      "        When the iterable is empty, return the start value.  This function is\n",
+      "        intended specifically for use with numeric values and may reject\n",
+      "        non-numeric types.\n",
+      "\n",
+      "    radians(x, /)\n",
+      "        Convert angle x from degrees to radians.\n",
+      "\n",
+      "    remainder(x, y, /)\n",
+      "        Difference between x and the closest integer multiple of y.\n",
+      "\n",
+      "        Return x - n*y where n*y is the closest integer multiple of y.\n",
+      "        In the case where x is exactly halfway between two multiples of\n",
+      "        y, the nearest even value of n is used. The result is always exact.\n",
+      "\n",
+      "    sin(x, /)\n",
+      "        Return the sine of x (measured in radians).\n",
+      "\n",
+      "    sinh(x, /)\n",
+      "        Return the hyperbolic sine of x.\n",
+      "\n",
+      "    sqrt(x, /)\n",
+      "        Return the square root of x.\n",
+      "\n",
+      "    sumprod(p, q, /)\n",
+      "        Return the sum of products of values from two iterables p and q.\n",
+      "\n",
+      "        Roughly equivalent to:\n",
+      "\n",
+      "            sum(itertools.starmap(operator.mul, zip(p, q, strict=True)))\n",
+      "\n",
+      "        For float and mixed int/float inputs, the intermediate products\n",
+      "        and sums are computed with extended precision.\n",
+      "\n",
+      "    tan(x, /)\n",
+      "        Return the tangent of x (measured in radians).\n",
+      "\n",
+      "    tanh(x, /)\n",
+      "        Return the hyperbolic tangent of x.\n",
+      "\n",
+      "    trunc(x, /)\n",
+      "        Truncates the Real x to the nearest Integral toward 0.\n",
+      "\n",
+      "        Uses the __trunc__ magic method.\n",
+      "\n",
+      "    ulp(x, /)\n",
+      "        Return the value of the least significant bit of the float x.\n",
+      "\n",
+      "DATA\n",
+      "    e = 2.718281828459045\n",
+      "    inf = inf\n",
+      "    nan = nan\n",
+      "    pi = 3.141592653589793\n",
+      "    tau = 6.283185307179586\n",
+      "\n",
+      "FILE\n",
+      "    (built-in)\n",
+      "\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "help(m)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "id": "4085e468-ab38-417e-8eac-1446db4229a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3.141592653589793"
+      ]
+     },
+     "execution_count": 132,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "m.pi"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "id": "2baf5dfe-6449-47f7-aa7b-4d84f3214da7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#create a function to find the area of a circle using math module"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 134,
+   "id": "6e5f18b4-f1a1-43d7-b15a-64c9f57092aa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 135,
+   "id": "887ae7be-9c63-4ea9-9e69-89e488506e78",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def circle(r):\n",
+    "    area=math.pi*r**2\n",
+    "    return area"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 136,
+   "id": "7861a7b3-0f91-4f40-bd3e-48cf901c8681",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "91.60884177867838"
+      ]
+     },
+     "execution_count": 136,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "circle(5.4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 137,
+   "id": "df65fd81-3981-40b9-9dad-3bba043f3a63",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import time"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "id": "602b5155-9a83-48c3-95b8-0c3b64478740",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Thu Jun  4 12:04:10 2026'"
+      ]
+     },
+     "execution_count": 138,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "time.asctime()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "id": "3b66f3a0-4f73-414b-8ce6-4d49e45a52b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1780554858.2378542"
+      ]
+     },
+     "execution_count": 139,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "time.time()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "id": "5d14df16-c25e-4364-b62a-d340b716fd5c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n",
+      "welcome back\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"hello\")\n",
+    "time.sleep(5)\n",
+    "print(\"welcome back\")\n",
+    "      "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "id": "1138c5fc-9d4c-4837-9f7c-54f15cec2bf5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import mod"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 144,
+   "id": "eaeaafbe-a087-403a-956d-7b6dbb7132ee",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "15"
+      ]
+     },
+     "execution_count": 144,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mod.add(4,5,6)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 145,
+   "id": "cc7739d7-04bd-4c0b-b2ad-3660e35129a1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# type hinting => tell the type of parmeters and return value and docstring"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 148,
+   "id": "a0fd40f7-2f59-4e79-8c29-4b68ba790d82",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def sq(x:int) -> int:\n",
+    "    \"\"\"\n",
+    "    Calculate the square of a number.\n",
+    "        \n",
+    "    Args:\n",
+    "        x (int): The number to square.\n",
+    "        \n",
+    "    Returns:\n",
+    "        int:The square of the number.\n",
+    "    \"\"\"\n",
+    "\n",
+    "    res=x*x\n",
+    "    return res"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 149,
+   "id": "474f745a-7a9e-40d1-a92b-89eb4c98e4de",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "25"
+      ]
+     },
+     "execution_count": 149,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sq(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 150,
+   "id": "f6e33034-1a23-441f-aace-9d59f6cf09f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Help on function sq in module __main__:\n",
+      "\n",
+      "sq(x: int) -> int\n",
+      "    Calculate the square of a number.\n",
+      "\n",
+      "    Args:\n",
+      "        x (int): The number to square.\n",
+      "\n",
+      "    Returns:\n",
+      "        int:The square of the number.\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "help(sq)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "71549571-704f-402d-a9ac-eaa0872470b7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
