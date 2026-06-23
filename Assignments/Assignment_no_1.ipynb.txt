@@ -1,0 +1,387 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7qPaK_wGqy3p",
+        "outputId": "4a4efaf0-dcbb-46ec-897c-4d21c37aa1e3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 34\n",
+            "Enter second number: 2\n",
+            "Addition: 36\n",
+            "Difference: 32\n",
+            "Product: 68\n",
+            "Quotient: 17.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "num1 = int(input(\"Enter first number: \"))\n",
+        "num2 = int(input(\"Enter second number: \"))\n",
+        "\n",
+        "print(\"Addition:\", num1 + num2)\n",
+        "print(\"Difference:\", num1 - num2)\n",
+        "print(\"Product:\", num1 * num2)\n",
+        "\n",
+        "if num2 == 0:\n",
+        "    print(\"Cannot divide by zero\")\n",
+        "else:\n",
+        "    print(\"Quotient:\", num1 / num2)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "celsius = float(input(\"Enter temperature in Celsius: \"))\n",
+        "\n",
+        "fahrenheit = (9/5 * celsius) + 32\n",
+        "kelvin = celsius + 273.15\n",
+        "\n",
+        "print(\"Celsius:\", celsius)\n",
+        "print(\"Fahrenheit:\", fahrenheit)\n",
+        "print(\"Kelvin:\", kelvin)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ughysT5nrA9J",
+        "outputId": "86fa79e0-a9a5-4cb2-b5d9-854bdc032bbc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter temperature in Celsius: 45\n",
+            "Celsius: 45.0\n",
+            "Fahrenheit: 113.0\n",
+            "Kelvin: 318.15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "text = input(\"Enter a string: \")\n",
+        "\n",
+        "print(\"Uppercase:\", text.upper())\n",
+        "print(\"Length:\", len(text))\n",
+        "print(\"Reversed:\", text[::-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ib7PJ2nWr1px",
+        "outputId": "1e755a3a-87db-4e65-ebad-768724ca79a9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a string: Sayali \n",
+            "Uppercase: SAYALI \n",
+            "Length: 7\n",
+            "Reversed:  ilayaS\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "num1 = int(input(\"Enter first number: \"))\n",
+        "num2 = int(input(\"Enter second number: \"))\n",
+        "num3 = int(input(\"Enter third number: \"))\n",
+        "\n",
+        "if num1 >= num2 and num1 >= num3:\n",
+        "    print(\"Largest number:\", num1)\n",
+        "elif num2 >= num1 and num2 >= num3:\n",
+        "    print(\"Largest number:\", num2)\n",
+        "else:\n",
+        "    print(\"Largest number:\", num3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "12xbWTv_saBj",
+        "outputId": "ebde3c6a-58b8-40c7-ee8d-259d34c432c2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 2\n",
+            "Enter second number: 7\n",
+            "Enter third number: 4\n",
+            "Largest number: 7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "year = int(input(\"Enter a year: \"))\n",
+        "\n",
+        "if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):\n",
+        "    print(\"Leap Year\")\n",
+        "else:\n",
+        "    print(\"Not a Leap Year\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aFXWNKA-sf-h",
+        "outputId": "94f24a27-4e28-4d1b-a882-35ece3e358b1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a year: 2024\n",
+            "Leap Year\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "num1 = float(input(\"Enter first number: \"))\n",
+        "num2 = float(input(\"Enter second number: \"))\n",
+        "operator = input(\"Enter operator (+,-,*,/): \")\n",
+        "\n",
+        "if operator == \"+\":\n",
+        "    print(\"Result:\", num1 + num2)\n",
+        "elif operator == \"-\":\n",
+        "    print(\"Result:\", num1 - num2)\n",
+        "elif operator == \"*\":\n",
+        "    print(\"Result:\", num1 * num2)\n",
+        "elif operator == \"/\":\n",
+        "    if num2 == 0:\n",
+        "        print(\"Cannot divide by zero\")\n",
+        "    else:\n",
+        "        print(\"Result:\", num1 / num2)\n",
+        "else:\n",
+        "    print(\"Invalid operator\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sLZyCtSLs5g7",
+        "outputId": "bd208c5e-8412-499b-8899-b2eae70005ad"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number: 10\n",
+            "Enter second number: 5\n",
+            "Enter operator (+,-,*,/): *\n",
+            "Result: 50.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "for i in range(1, 11):\n",
+        "    print(num, \"x\", i, \"=\", num * i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RvSdAAhLtAVl",
+        "outputId": "65c32ab8-0c76-4407-8e5d-5002d508ee68"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 7\n",
+            "7 x 1 = 7\n",
+            "7 x 2 = 14\n",
+            "7 x 3 = 21\n",
+            "7 x 4 = 28\n",
+            "7 x 5 = 35\n",
+            "7 x 6 = 42\n",
+            "7 x 7 = 49\n",
+            "7 x 8 = 56\n",
+            "7 x 9 = 63\n",
+            "7 x 10 = 70\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "for num in range(2, n + 1):\n",
+        "    is_prime = True\n",
+        "\n",
+        "    for i in range(2, num):\n",
+        "        if num % i == 0:\n",
+        "            is_prime = False\n",
+        "            break\n",
+        "\n",
+        "    if is_prime:\n",
+        "        print(num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lQdEMfxttHtS",
+        "outputId": "bfc4e04e-642d-499c-df84-f26983dd85b5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 20\n",
+            "2\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "11\n",
+            "13\n",
+            "17\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "count = 0\n",
+        "total = 0\n",
+        "\n",
+        "while True:\n",
+        "    num = int(input(\"Enter a number: \"))\n",
+        "\n",
+        "    if num == 0:\n",
+        "        break\n",
+        "\n",
+        "    count += 1\n",
+        "    total += num\n",
+        "\n",
+        "print(\"Count:\", count)\n",
+        "print(\"Sum:\", total)\n",
+        "\n",
+        "if count > 0:\n",
+        "    print(\"Average:\", total / count)\n",
+        "else:\n",
+        "    print(\"Average: 0\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7tOJ52n6tOpS",
+        "outputId": "63ee32c3-ffc1-442c-f137-6f7f569be77c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number: 4\n",
+            "Enter a number: 3\n",
+            "Enter a number: 5\n",
+            "Enter a number: 6\n",
+            "Enter a number: 0\n",
+            "Count: 4\n",
+            "Sum: 18\n",
+            "Average: 4.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input(\"Enter number of rows: \"))\n",
+        "\n",
+        "for i in range(1, n + 1):\n",
+        "    spaces = n - i\n",
+        "    stars = 2 * i - 1\n",
+        "    print(\" \" * spaces + \"*\" * stars)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uXu_ef4ntaeW",
+        "outputId": "3889d146-2e28-4957-e8e6-90a9c1554ad4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter number of rows: 5\n",
+            "    *\n",
+            "   ***\n",
+            "  *****\n",
+            " *******\n",
+            "*********\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
